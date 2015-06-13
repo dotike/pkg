@@ -47,4 +47,16 @@ $ sudo pkg_add -r automake
 $ sudo pkg_add -r libtool
 ####
 
+$ autoreconf-2.69 -if     
+libtoolize: putting auxiliary files in `.'.
+libtoolize: copying file `./ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIR, `m4'.
+libtoolize: copying file `m4/libtool.m4'
+libtoolize: copying file `m4/ltoptions.m4'
+libtoolize: copying file `m4/ltsugar.m4'
+libtoolize: copying file `m4/ltversion.m4'
+libtoolize: copying file `m4/lt~obsolete.m4'
+$ echo $?
+0
+$ 
 
