@@ -1,0 +1,50 @@
+
+
+https://github.com/freebsd/pkg
+
+Once you have the pkg sources, installing it is fairly easy:
+
+% cd pkg
+% ./autogen.sh
+% ./configure
+% make
+# make install
+
+##############################################################################
+
+/home/ike/repos/pkg
+$ ./autogen.sh
+./autogen.sh[2]: autoreconf: not found
+$ 
+
+####
+$ sudo pkg_add -r autoconf   
+####
+
+$ ./autogen.sh  
+Provide an AUTOCONF_VERSION environment variable, please
+$ 
+
+####
+$ export AUTOCONF_VERSION=2.13 
+####
+
+$ ./autogen.sh                 
+Usage: autoreconf [-f] [-h] [--help] [-m dir] [--macrodir=dir]
+       [-l dir] [--localdir=dir] [--force] [--verbose] [--version]
+       [--cygnus] [--foreign] [--gnits] [--gnu] [-i] [--include-deps]
+$
+
+####
+$ sudo pkg_add -r automake
+####
+
+####
+	 5: automake-1.14.1
+	16: autoconf-2.69p1
+
+####
+$ sudo pkg_add -r libtool
+####
+
+
